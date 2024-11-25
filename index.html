@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz sobre JavaScript</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. O que é o JavaScript?</p>
+                <input type="radio" name="q1" value="a"> Linguagem de estilo de página<br>
+                <input type="radio" name="q1" value="b"> Linguagem de programação para a web<br>
+                <input type="radio" name="q1" value="c"> Banco de dados<br>
+            </div>
+
+            <div class="question">
+                <p>2. Qual comando é usado para declarar uma variável em JavaScript?</p>
+                <input type="radio" name="q2" value="a"> let<br>
+                <input type="radio" name="q2" value="b"> const<br>
+                <input type="radio" name="q2" value="c"> var<br>
+            </div>
+
+            <div class="question">
+                <p>3. Qual método é usado para adicionar um item no final de um array?</p>
+                <input type="radio" name="q3" value="a"> push()<br>
+                <input type="radio" name="q3" value="b"> pop()<br>
+                <input type="radio" name="q3" value="c"> shift()<br>
+            </div>
+
+            <div class="question">
+                <p>4. O que significa "DOM" em JavaScript?</p>
+                <input type="radio" name="q4" value="a"> Documento de Objetos de Modelagem<br>
+                <input type="radio" name="q4" value="b"> Documento de Objetos de Manipulação<br>
+                <input type="radio" name="q4" value="c"> Document Object Model<br>
+            </div>
+
+            <div class="question">
+                <p>5. Qual operador é utilizado para verificar a igualdade estrita em JavaScript?</p>
+                <input type="radio" name="q5" value="a"> ==<br>
+                <input type="radio" name="q5" value="b"> ===<br>
+                <input type="radio" name="q5" value="c"> =<br>
+            </div>
+
+            <button type="submit">Verificar Respostas</button>
+            <button type="button" id="limpar" onclick="limparQuiz()">Limpar</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
